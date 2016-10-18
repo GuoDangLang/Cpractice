@@ -3,3 +3,4 @@
 
 * **Dynamic_array** is a implementation for Dynamic Array.
 	
+* **Linked_list** is a implementation for Singly-Linked list, Doubly-linked list is not implemented here.
