@@ -30,16 +30,14 @@ void enqueue(int val) {
 }
 
 void dequeue() {
-	int val = tail -> data;
-	node *temp = tail;
-	node *travel = head;
-	while (travel -> next != tail) {
-		travel = travel -> next;
+	if (head == NULL) printf("Error: Empty Queue!\n");
+	else {
+	       	int val = head -> data;
+	       	node *temp = head;
+		head = head -> next;
+		free(temp);
+	       	printf("pop : %d\n", val);
 	}
-	free(temp);
-	tail = travel;
-	tail -> next = NULL;
-	printf("pop : %d\n", val);
 }
 
 int empty() {
